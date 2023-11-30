@@ -1,0 +1,13 @@
+function solution(arr, delete_list) {
+   delete_list.forEach((val)=>{
+       arr.forEach((i,idx)=>{
+           if(val===i){
+               arr.splice(idx,1);
+           }
+       });
+       
+   });
+    return arr;
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/181844?language=javascript
