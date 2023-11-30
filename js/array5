@@ -1,0 +1,12 @@
+function solution(intStrs, k, s, l) {
+    var answer = [];
+    for(var i=0; i<intStrs.length; i++){
+      let tmp= Number(intStrs[i].substr(s,l));
+        if(k<tmp){
+           answer.push(tmp);
+       }
+    }
+    return answer;
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/181912?language=javascript
