@@ -1,0 +1,10 @@
+function solution(num_list) {
+    var answer = [];
+    num_list.sort(function(comp1,comp2){
+        return comp1 - comp2;
+    })
+    return num_list.slice(5);
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/181852
+//숫자 배열 오름차순 정렬후 5번째큰수~가장큰수 잘라 리턴
