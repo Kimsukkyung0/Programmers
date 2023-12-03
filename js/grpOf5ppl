@@ -1,0 +1,12 @@
+function solution(names) {
+    var answer = [];
+    //그룹에 포함될 인덱스0,5,10
+    names.forEach((nm,idx)=>{
+        if((idx%5)===0){
+            answer.push(nm);
+        }
+    });
+    return answer;
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/181886?language=javascript
