@@ -1,0 +1,11 @@
+function solution(n, k) {
+    var answer = [];
+    var tmp=k;
+    while(tmp<=n){    
+    answer.push(tmp);
+    tmp+=k;
+    }
+    return answer;
+}
+//https://school.programmers.co.kr/learn/courses/30/lessons/181901
+//1로 시작해 n보다 작은 k의 배수 배열 리턴
