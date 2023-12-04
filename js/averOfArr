@@ -1,0 +1,9 @@
+function solution(numbers) {
+    var sum = numbers.reduce(function add(sum,curVal){
+        return sum+=curVal;
+    });
+    return sum/numbers.length;
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/120817
+//주어진 배열(numbers)의 평균값을 리턴하는코드작성
