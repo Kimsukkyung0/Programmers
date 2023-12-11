@@ -1,0 +1,7 @@
+function solution(my_string) {
+    return my_string.trim().split(/\s+/);
+    //split(/\s+/) : 하나 이상의 공백을 기준으로 분할, 리스트로 반환. 
+    //trim : 앞뒤 공백제거
+}
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/181868 공백으로구분하기2
