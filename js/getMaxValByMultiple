@@ -1,0 +1,21 @@
+function solution(numbers) {
+    var answer = 0;
+    //for문을 두번사용하여 배열 내에서 곱한 값 구하기
+    numbers.forEach((val1, idx1)=>{
+        // for(var val1 of numbers){
+            numbers.forEach((val2,idx2)=>{
+              var tmp = val1*val2;
+                //제곱값이나오지않도록 검사
+                //실행결과 시 같은 정수가 배열에 있고, idx 값이 다를경우 곱하도록
+            if(val1!=val2 || idx1!=idx2){              
+                //삼항식사용 코드 간략화
+                answer<=tmp ? answer=tmp : answer;    
+              }
+            });
+           });
+        
+    return answer;
+}
+
+//정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
+//https://school.programmers.co.kr/learn/courses/30/lessons/120847
